@@ -161,7 +161,8 @@ h6 {
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
     gap: 60px;
     align-items: center;
 }
@@ -186,6 +187,7 @@ h6 {
 }
 
 .hero-cta {
+    justify-content: center;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
