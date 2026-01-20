@@ -481,31 +481,312 @@ h6 {
     transform: translateY(0);
 }
 
-/* Responsive */
+/* Responsive - Tablet (1024px以下) */
+@media (max-width: 1024px) {
+    .comparison-table-wrapper {
+        padding: 24px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 16px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive - Mobile (768px以下) */
 @media (max-width: 768px) {
+    :root {
+        --header-height: 60px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .btn-sm {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: calc(var(--header-height) + 40px);
+        padding-bottom: 60px;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 30px;
+    }
+
+    .hero-catch {
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.4;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-desc br {
+        display: none;
     }
 
     .hero-cta {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .solution-block {
-        grid-template-columns: 1fr;
-    }
-
-    .solution-block.reverse {
-        direction: ltr;
+    .hero-cta .btn {
+        width: 100%;
+        max-width: 300px;
     }
 
     .section {
         padding: 60px 0;
     }
 
+    .container {
+        padding: 0 16px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .challenges-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .challenge-card {
+        padding: 24px;
+    }
+
+    .challenge-icon {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+
+    .solution-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .solution-block.reverse {
+        direction: ltr;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .solution-card {
+        padding: 24px;
+    }
+
+    .solution-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 16px;
+    }
+
+    .comparison-table-wrapper {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .comparison-table {
+        min-width: 500px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .use-case-card {
+        padding: 24px;
+    }
+
+    .use-case-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .about-content {
+        text-align: left;
+    }
+
+    .about-lead {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .about-lead br {
+        display: none;
+    }
+
+    .synergy-section {
+        margin-top: 30px;
+    }
+
+    .synergy-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .synergy-card {
+        padding: 20px;
+    }
+
+    .synergy-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .flow-steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .flow-step {
+        padding: 24px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .flow-step h3 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 60px 0 30px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .footer-title br {
+        display: none;
+    }
+
+    .footer-desc {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 50px;
+    }
+
+    .footer-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn-lg {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+
+    .company-info {
+        padding-top: 30px;
+        font-size: 0.85rem;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
     .sp-only {
         display: block;
+    }
+
+    .no-break {
+        white-space: normal;
+    }
+}
+
+/* Responsive - Small Mobile (480px以下) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-catch {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .challenge-card,
+    .solution-card,
+    .use-case-card,
+    .flow-step,
+    .synergy-card {
+        padding: 20px;
+    }
+
+    .comparison-table {
+        min-width: 400px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px 6px;
+        font-size: 0.75rem;
+    }
+
+    .footer-title {
+        font-size: 1.25rem;
+    }
+
+    .btn-lg {
+        padding: 14px 20px;
+        font-size: 0.9rem;
     }
 }
 
@@ -524,12 +805,6 @@ h6 {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-}
-
-@media (max-width: 768px) {
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Solutions Section Grid */
